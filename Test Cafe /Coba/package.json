@@ -1,0 +1,19 @@
+{
+  "name": "testcafe-helkia",
+  "version": "1.0.0",
+  "description": "mencoba testcafe bersama atlas",
+  "main": "(index.js)",
+  "scripts": {
+    "test-helkia": "node_modules/.bin/testcafe chrome ./test"
+  },
+  "keywords": [
+    "atlas",
+    "testcafe",
+    "automation"
+  ],
+  "author": "helkia",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.9.4"
+  }
+}
