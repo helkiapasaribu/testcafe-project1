@@ -6,13 +6,13 @@ fixture `automation dengan testcafe`
 //set speed (biar gak kecepatan)
 
 
-test.skip('click populate button', async t => {
+/*test.skip('click populate button', async t => {
     await t
     .setTestSpeed(0.3)
     .setNativeDialogHandler(() => true) 
     .click(Selector('#populate'))
     .expect(Selector('#developer-name').value).contains('Peter Parker') //cari selector/field yaitu developer-name, dan akan diisi peter parker
-})
+})*/
 
 test.skip('select radio button', async t =>{
     await t
@@ -62,7 +62,7 @@ test.skip('select dropdown', async t => {
     .expect(select.innerText).contains('Javascript API')
 })
 
-test('End to End', async t => {
+test.skip('End to End', async t => {
     await t
     .setTestSpeed(0.3)
     //click button populate
@@ -82,7 +82,7 @@ test('End to End', async t => {
     /*.click(Selector('#tried-test-cafe'))
     .expect(Selector('#tried-test-cafe').checked).ok()*/
 
-    //slider 
+    //slider untuk menggeser
     .click(Selector('#tried-test-cafe'))
     .drag(slider, 80, 0, {offsetX:10, offsetY:10})
 
