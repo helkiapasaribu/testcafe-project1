@@ -14,7 +14,7 @@ fixture `automation dengan testcafe`
     .expect(Selector('#developer-name').value).contains('Peter Parker') //cari selector/field yaitu developer-name, dan akan diisi peter parker
 })*/
 
-test.skip('select radio button', async t =>{
+/*test('select radio button', async t =>{
     await t
     .click(Selector('#macos'))
     .expect(Selector('#macos').innerText).contains('macos')
@@ -27,8 +27,8 @@ test.skip('select radio button', async t =>{
     .click(Selector('#macos'))
     .expect(Selector('#macos').innerText).contains('macos')
     .expect(Selector('#windows').checked).notOk()
-    .expect(Selector('#linux').checked).notOk()*/
-})
+    .expect(Selector('#linux').checked).notOk()
+}) */
 
 test.skip('click multiple checkbox', async t =>{
     await t
