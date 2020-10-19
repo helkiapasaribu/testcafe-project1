@@ -1,0 +1,23 @@
+{
+  "name": "collectiontestcafe",
+  "version": "1.0.0",
+  "description": "collection web automation testing",
+  "main": "index.js",
+  "scripts": {
+    "test-pasaribu": "node_modules/.bin/testcafe chrome ./collections"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helkiapasaribu/collection-testcafe"
+  },
+  "keywords": [
+    "collection",
+    "automation",
+    "testcafe"
+  ],
+  "author": "helkia",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.9.4"
+  }
+}

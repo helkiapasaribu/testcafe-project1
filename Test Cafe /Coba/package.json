@@ -4,7 +4,7 @@
   "description": "mencoba testcafe bersama atlas",
   "main": "(index.js)",
   "scripts": {
-    "test-helkia": "node_modules/.bin/testcafe chrome ./test"
+    "test-helkia": "node_modules/.bin/testcafe chrome ./test --reporter html:helkia.html"
   },
   "keywords": [
     "atlas",
@@ -14,6 +14,7 @@
   "author": "helkia",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^1.9.4"
+    "testcafe": "^1.9.4",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }

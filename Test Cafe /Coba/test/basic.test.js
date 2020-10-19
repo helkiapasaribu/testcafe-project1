@@ -6,21 +6,21 @@ fixture `automation dengan testcafe`
 //set speed (biar gak kecepatan)
 
 
-/*test.skip('click populate button', async t => {
+test.skip('click populate button', async t => {
     await t
     .setTestSpeed(0.3)
     .setNativeDialogHandler(() => true) 
     .click(Selector('#populate'))
     .expect(Selector('#developer-name').value).contains('Peter Parker') //cari selector/field yaitu developer-name, dan akan diisi peter parker
-})*/
+})
 
-/*test('select radio button', async t =>{
+test.skip('select radio button', async t =>{
     await t
     .click(Selector('#macos'))
     .expect(Selector('#macos').innerText).contains('macos')
     .expect(Selector('#windows').checked).notOk()
     .expect(Selector('#linux').checked).notOk()
-   /* .click(Selector('#macos'))
+    .click(Selector('#macos'))
     .expect(Selector('#macos').innerText).eql('macos')
     .expect(Selector('#windows').checked).notOk()
     .expect(Selector('#linux').checked).notOk()
@@ -28,7 +28,7 @@ fixture `automation dengan testcafe`
     .expect(Selector('#macos').innerText).contains('macos')
     .expect(Selector('#windows').checked).notOk()
     .expect(Selector('#linux').checked).notOk()
-}) */
+}) 
 
 test.skip('click multiple checkbox', async t =>{
     await t
@@ -62,7 +62,7 @@ test.skip('select dropdown', async t => {
     .expect(select.innerText).contains('Javascript API')
 })
 
-test.skip('End to End', async t => {
+test('End to End', async t => {
     await t
     .setTestSpeed(0.3)
     //click button populate
@@ -99,6 +99,7 @@ test.skip('End to End', async t => {
     //expected halaman selanjutnya
     .expect(Selector('.result-content').innerText).contains('Peter Parker')
 
-    .wait(3000)
+  //  .wait(3000)
+    .debug()
 
 })
